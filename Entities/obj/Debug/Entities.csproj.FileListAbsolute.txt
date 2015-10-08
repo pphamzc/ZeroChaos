@@ -1,0 +1,4 @@
+C:\Programming\FakeResourceDossier\Entities\bin\Debug\Entities.dll
+C:\Programming\FakeResourceDossier\Entities\bin\Debug\Entities.pdb
+C:\Programming\FakeResourceDossier\Entities\obj\Debug\Entities.dll
+C:\Programming\FakeResourceDossier\Entities\obj\Debug\Entities.pdb

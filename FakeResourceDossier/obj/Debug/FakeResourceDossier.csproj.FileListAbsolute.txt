@@ -1,0 +1,7 @@
+C:\Programming\FakeResourceDossier\FakeResourceDossier\bin\Debug\FakeResourceDossier.exe.config
+C:\Programming\FakeResourceDossier\FakeResourceDossier\bin\Debug\FakeResourceDossier.exe
+C:\Programming\FakeResourceDossier\FakeResourceDossier\bin\Debug\FakeResourceDossier.pdb
+C:\Programming\FakeResourceDossier\FakeResourceDossier\obj\Debug\FakeResourceDossier.Properties.Resources.resources
+C:\Programming\FakeResourceDossier\FakeResourceDossier\obj\Debug\FakeResourceDossier.csproj.GenerateResource.Cache
+C:\Programming\FakeResourceDossier\FakeResourceDossier\obj\Debug\FakeResourceDossier.exe
+C:\Programming\FakeResourceDossier\FakeResourceDossier\obj\Debug\FakeResourceDossier.pdb

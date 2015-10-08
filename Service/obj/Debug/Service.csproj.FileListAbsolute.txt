@@ -1,0 +1,9 @@
+C:\Programming\FakeResourceDossier\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Programming\FakeResourceDossier\Service\bin\Debug\Zerochaos.Service.dll
+C:\Programming\FakeResourceDossier\Service\bin\Debug\Zerochaos.Service.pdb
+C:\Programming\FakeResourceDossier\Service\bin\Debug\Entities.dll
+C:\Programming\FakeResourceDossier\Service\bin\Debug\ZeroChaos.Service.Interface.dll
+C:\Programming\FakeResourceDossier\Service\bin\Debug\Entities.pdb
+C:\Programming\FakeResourceDossier\Service\bin\Debug\ZeroChaos.Service.Interface.pdb
+C:\Programming\FakeResourceDossier\Service\obj\Debug\Zerochaos.Service.dll
+C:\Programming\FakeResourceDossier\Service\obj\Debug\Zerochaos.Service.pdb
