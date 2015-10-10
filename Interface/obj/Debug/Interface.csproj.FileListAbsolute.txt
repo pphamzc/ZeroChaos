@@ -5,3 +5,10 @@ C:\Programming\FakeResourceDossier\Interface\bin\Debug\Entities.dll
 C:\Programming\FakeResourceDossier\Interface\bin\Debug\Entities.pdb
 C:\Programming\FakeResourceDossier\Interface\obj\Debug\ZeroChaos.Service.Interface.dll
 C:\Programming\FakeResourceDossier\Interface\obj\Debug\ZeroChaos.Service.Interface.pdb
+C:\Programming\ZeroChaos\Interface\bin\Debug\ZeroChaos.Service.Interface.dll
+C:\Programming\ZeroChaos\Interface\bin\Debug\ZeroChaos.Service.Interface.pdb
+C:\Programming\ZeroChaos\Interface\bin\Debug\ZeroChaos.Business.Entities.dll
+C:\Programming\ZeroChaos\Interface\bin\Debug\ZeroChaos.Business.Entities.pdb
+C:\Programming\ZeroChaos\Interface\obj\Debug\Interface.csprojResolveAssemblyReference.cache
+C:\Programming\ZeroChaos\Interface\obj\Debug\ZeroChaos.Service.Interface.dll
+C:\Programming\ZeroChaos\Interface\obj\Debug\ZeroChaos.Service.Interface.pdb
