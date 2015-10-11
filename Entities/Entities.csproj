@@ -40,7 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ObjectIndustryMapping.cs" />
+    <Compile Include="ObjectJobCategoryMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="ResourceAttachment.cs" />
     <Compile Include="ResourceCertification.cs" />
     <Compile Include="ResourceDossierResponse.cs" />
     <Compile Include="ResourceEducation.cs" />
@@ -54,17 +59,21 @@
     <Compile Include="ResourceJobSkillCertificationResponse.cs" />
     <Compile Include="ResourceLanguageProficiency.cs" />
     <Compile Include="ResourcePersonalInformationResponse.cs" />
+    <Compile Include="ResourceProjectReview.cs" />
     <Compile Include="ResourceProjectReviewResponse.cs" />
     <Compile Include="ResourceRequest.cs" />
     <Compile Include="ResourceRequisitionSubmissionResponse.cs" />
     <Compile Include="ResourceResponse.cs" />
+    <Compile Include="ResourceResume.cs" />
     <Compile Include="ResourceResumeAttachmentRequest.cs" />
     <Compile Include="ResourceResumeAttachmentResponse.cs" />
     <Compile Include="ResourceResumeRequest.cs" />
+    <Compile Include="ResourceWebReference.cs" />
     <Compile Include="ResourceWebReferences.cs" />
     <Compile Include="ResourceWorkExperience.cs" />
     <Compile Include="ResourceWorkExperienceRequest.cs" />
     <Compile Include="ResourceWorkExperienceResponse.cs" />
+    <Compile Include="Skill.cs" />
     <Compile Include="WorkPreference.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

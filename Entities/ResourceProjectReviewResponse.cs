@@ -7,5 +7,6 @@ namespace ZeroChaos.Business.Entities
 {
     public class ResourceProjectReviewResponse
     {
+        public List<ResourceProjectReview> resourceProject { get; set; }
     }
 }

@@ -7,5 +7,8 @@ namespace ZeroChaos.Business.Entities
 {
     public class ResourceEducationLanguageResponse
     {
+        public	List<ResourceEducation> ResourceEducations { get; set; }
+        public List<ResourceLanguageProficiency> ResourceLanguageProficiencies { get; set; }
+
     }
 }

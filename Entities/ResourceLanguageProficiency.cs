@@ -12,6 +12,7 @@ namespace ZeroChaos.Business.Entities
         public int ResourceLanguageProficiencyID{get;set;}
         public int ResourceID { get; set; }
         public int LanguageID { get; set; }
+        public string Language { get; set; }
         public int SpeakProficiency { get; set; }
         public int ReadProficiency { get; set; }
         public int WriteProficiency { get; set; }

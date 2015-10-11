@@ -7,5 +7,7 @@ namespace ZeroChaos.Business.Entities
 {
     public class ResourceJobSkillCertificationResponse
     {
+        public	List<ResourceJobSkill> ResourceJobSkill {get;set;}
+        public List<ResourceCertification> ResourceCertification { get; set; }
     }
 }

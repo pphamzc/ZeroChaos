@@ -10,16 +10,27 @@ namespace ZeroChaos.Service.Services
 {
     public class ResourceEducationService : IResourceEducationService
     {
+        ResourceEducation re;
+        ResourceLanguageProficiency rl;
+        List<ResourceEducation> lre;
+        public ResourceEducationService()
+        {
+            re = new ResourceEducation() { Degree = "Masters Degrees", InstituteName = "Purdue University", StudyField = "Engineering", StartDate = new DateTime(200, 1, 1), EndDate = new DateTime(2004, 1, 1) };
+            rl = new ResourceLanguageProficiency() { Language = "English", IsPrimary = true, SpeakProficiency = 5 }
+            lre = new List<ResourceEducation>();
+            lre.Add(re);
+        }
         /// This method will return ResourceEducation details from ResourceEducation table based on ResourceID.
         public List<ResourceEducation> GetResourceEducationByResourceID(int resourceID)
         {
-            return new List<ResourceEducation>();
+           
+            return lre;
         }
 
         /// This method will insert the Resource Education details in ResourceEducation Table.
         public int AddResourceEducation(ResourceEducation ResourceEducation)
         {
-            return 0;
+            return 1;
         }
 
         /// This method will update the existing resource education record.
@@ -33,7 +44,12 @@ namespace ZeroChaos.Service.Services
         ///  Details and Resource Language Proficiency detail.
         public ResourceEducationLanguageResponse GetResourceEducationLanguageResponseByResourceID(int resourceID)
         {
-            return new ResourceEducationLanguageResponse();
+            ResourceEducationLanguageResponse relp = new ResourceEducationLanguageResponse();
+            relp.ResourceEducations = lre;
+            relp.ResourceLanguageProficiencies = new List<ResourceLanguageProficiency>();
+
+            relp.ResourceLanguageProficiencies.Add(new ResourceLanguageProficiency() { Language = "English", IsPrimary = true });
+            return relp;
         }
 
     }

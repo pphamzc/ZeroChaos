@@ -11,17 +11,66 @@ namespace ZeroChaos.Service.Services
     public class ResourceJobPreferenceService : IResourceJobPreferenceService
     {
 
-        /// This method will return the resource job preferences details from ResourceJobPreference table based  on ResourceID
+        ResourceJobPreference rjp;
+        ResourceJobPreferenceResponse rjpr;
 
+        public ResourceJobPreferenceService()
+        {
+            rjp = new ResourceJobPreference();
+
+            rjp.JobPreferenceStatusID = 1;
+            rjp.JobPreferenceDateAvailable = new DateTime(2015, 1, 3);
+            rjp.JobPreferencePreferredPay = 100.00;
+            rjp.JobPreferenceMinimumPay = 100.00;
+            rjp.JobPreferenceCurrencyCode = "USD";
+            rjp.JobPreferenceDesiredPosition = "Manager";
+            rjp.JobPreferenceWorkPreferencesID = 1;
+            rjp.JobPreferenceWillingToRelocate = true;
+
+            rjpr = new ResourceJobPreferenceResponse();
+            rjpr.ResourceJobPreference = rjp;
+            rjpr.jobCategory = new List<ObjectJobCategoryMapping>();
+
+
+            ResourceJobClassification reJobClass = new ResourceJobClassification();
+            reJobClass.JobClassID = 1;
+            reJobClass.ResourceJobClassificationID = 2;
+            reJobClass.ResourceJobPreferenceID = 3;
+
+            rjpr.jobClassification = new List<ResourceJobClassification>();
+            rjpr.jobClassification.Add(reJobClass);
+
+            rjpr.resourceIndustry = new List<ObjectIndustryMapping>();
+
+            ResourceJobPreferenceCountry ctry = new ResourceJobPreferenceCountry();
+            ctry.CountryCode = "US";
+            ctry.ResourceJobPreferenceCountryID = 1;
+            ctry.ResourceJobPreferenceID = 1;
+            ctry.ResourcePreferenceForCountryID = 1;
+
+            ResourceJobPreferenceCountry ctry2 = new ResourceJobPreferenceCountry();
+            ctry.CountryCode = "EU";
+            ctry.ResourceJobPreferenceCountryID = 2;
+            ctry.ResourceJobPreferenceID = 2;
+            ctry.ResourcePreferenceForCountryID = 2;
+
+            rjpr.ResourceJobPreferenceCountry = new List<ResourceJobPreferenceCountry>();
+            rjpr.ResourceJobPreferenceCountry.Add(ctry);
+            rjpr.ResourceJobPreferenceCountry.Add(ctry2);
+
+
+        }
+
+        /// This method will return the resource job preferences details from ResourceJobPreference table based  on ResourceID
         public ResourceJobPreference GetResourceJobPreferenceByResourceID(int resourceID)
         {
-            return new ResourceJobPreference();
+            return rjp;
         }
 
         /// This method will add the resource job preference details in ResourceJobPreference table.
         public int AddResourceJobPreference(ResourceJobPreference resourceJobPreference)
         {
-            return 0;
+            return 1;
         }
 
         /// This method will update the resource job preference details.
@@ -34,7 +83,7 @@ namespace ZeroChaos.Service.Services
         /// This method will return ResourceJobPreferenceResponse  which consist of Job Preference details
         public ResourceJobPreferenceResponse GetResourceJobPreferenceResponseByResourceID(int resourceID)
         {
-            return new ResourceJobPreferenceResponse();
+            return rjpr;
         }
 
     }
