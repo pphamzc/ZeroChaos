@@ -7,5 +7,10 @@ namespace ZeroChaos.Business.Entities
 {
     public class ObjectJobCategoryMapping
     {
+        public int ObjectJobCategoryMappingID { get; set; }
+        public int ObjectID { get; set; }
+        public int ObjectPKID { get; set; }
+        public int JobCatID { get; set; }
+
     }
 }

@@ -10,16 +10,26 @@ namespace ZeroChaos.Service.Services
     public class ResourceWorkExperienceService : IResourceWorkExperienceService
     {
 
+        ResourceWorkExperience rjp = new ResourceWorkExperience();
+
+        List<ResourceWorkExperience> list = new List<ResourceWorkExperience>();
+
         /// This method return resource work experience details based on resourceid.
         public List<ResourceWorkExperience> GetResourceWorkExperienceByResourceID(int resourceID)
         {
-            return new List<ResourceWorkExperience>();
+            
+
+            list.Add((ResourceWorkExperience)rjp.AutoPopulate());
+
+            return list;
         }
 
         /// This method will populate the Work experience tab of resource dossier
         public ResourceWorkExperienceResponse GetResourceWorkExperiencesResponseByResourceID(int resourceID)
         {
-            return new ResourceWorkExperienceResponse();
+            ResourceWorkExperienceResponse t = new ResourceWorkExperienceResponse();
+            t.ResourceWorkExperience = list;
+            return t;
         }
 
         /// This method add resource work experience details.
@@ -35,9 +45,13 @@ namespace ZeroChaos.Service.Services
         }
 
         /// This method will return all the work preference from look up table.
-        public List<WorkPreference> GetAllWorkPreferences()
+        public List<BaseEntity.WorkPreference> GetAllWorkPreferences()
         {
-            return new List<WorkPreference>();
+            List<BaseEntity.WorkPreference> lst = new List<BaseEntity.WorkPreference>();
+
+            lst.Add(BaseEntity.WorkPreference.Onsite);
+
+            return lst;
         }
     }
 }

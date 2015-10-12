@@ -8,7 +8,7 @@ namespace ZeroChaos.Business.Entities
     /// <summary>
     /// 
     /// </summary>
-    public class ResourceCertification
+    public class ResourceCertification : BaseEntity
     {
 
         /// <summary>
@@ -106,7 +106,15 @@ namespace ZeroChaos.Business.Entities
 
 
 
-
+        public override BaseEntity AutoPopulate()
+        {
+            this.CertificationNumber = 1;
+            this.IssuingAuthority = 5;
+            this.IsRequired = true;
+            this.VerificationStatusID = 6;
+            this.IssuedDate = new DateTime(2015, 8, 8);
+            return this;
+        } 
 
     }
 }

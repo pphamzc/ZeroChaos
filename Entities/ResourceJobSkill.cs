@@ -55,5 +55,17 @@ namespace ZeroChaos.Business.Entities
         /// </value>
         public bool IsDeleted { get; set; }
 
+
+        public override BaseEntity AutoPopulate()
+        {
+            this.JobSkillID = 1;
+            this.ResourceJobSkillID = 2;
+            this.YearsExperience = 5;
+            this.CompetencyID = 3;
+            this.ResourceID = 6;
+
+            return this;
+        }
+
     }
 }

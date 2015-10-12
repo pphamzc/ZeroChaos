@@ -11,11 +11,37 @@ namespace ZeroChaos.Service.Services
     public class ResourceService : IResourceService
     {
 
+
+        ResourceDossierResponse rdr;
+        ResourceEducation re;
+        ResourceLanguageProficiency rl;
+        List<ResourceEducation> lre;
+
+        public ResourceService()
+        {
+
+            re = new ResourceEducation(); 
+            rl = new ResourceLanguageProficiency();
+            lre = new List<ResourceEducation>();
+            lre.Add((ResourceEducation)re.AutoPopulate());
+
+            rdr = new ResourceDossierResponse();
+            rdr.PastProjects = 1;
+            rdr.ResourceHighestEducation = re;
+            rdr.ResourcePrimaryLanguageProficiency = rl;
+            Resource r = new Resource();
+
+
+            rdr.ResourceProfile = (Resource)r.AutoPopulate();
+        }
+
+
+
         /// This method will populate the My Dossier tab of Resource Dossier.
         /// This method will return ResourceDossierResponse  which consist of resource details and personal information details of the resource.
         public ResourceDossierResponse GetResourceDossierResponseByResourceID(int resourceID)
         {
-            return new ResourceDossierResponse();
+            return rdr;
         }
 
         /// This method will populate the Requisition Summary tab of Resource Dossier.
@@ -29,7 +55,11 @@ namespace ZeroChaos.Service.Services
         /// This method will return ResourceResumeAttachmentResponse  which consist of resume details and attachment details for the resource.
         public ResourceResumeAttachmentResponse GetResourceResumeAttachmentResponseByResourceID(int resourceID)
         {
-            return new ResourceResumeAttachmentResponse();
+            ResourceResumeAttachmentResponse rrar = new ResourceResumeAttachmentResponse();
+            rrar.ResourceAttachment = new List<ResourceAttachment>();
+            rrar.ResourceResume = new List<ResourceResume>();
+            rrar.ResourceResume.Add((ResourceResume)new ResourceResume().AutoPopulate());
+            return rrar;
         }
 
         /// This method will populate the Personal Information tab of Resource Dossier.

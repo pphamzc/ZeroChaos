@@ -10,10 +10,13 @@ namespace ZeroChaos.Service.Services
 {
     public class ResourceJobSkillService : IResourceJobSkillService
     {
+        public List<ResourceJobSkill> list = new List<ResourceJobSkill>();
+ 
         /// This method will return resource job skills details based on resourceid. 
         public List<ResourceJobSkill> GetResourceJobSkillByResourceID(int resourceID)
         {
-            return new List<ResourceJobSkill>();
+            list.Add((ResourceJobSkill)new ResourceJobSkill().AutoPopulate());
+            return list;
         }
 
         /// This method will add the resource job skill.
@@ -32,7 +35,16 @@ namespace ZeroChaos.Service.Services
         /// This method will return ResourceJobSkillCertificationResponse  which consist of job skills details and certification details of the resource.
         public ResourceJobSkillCertificationResponse GetResourceSkillCertificationResponseByResourceID(int resourceID)
         {
-            return new ResourceJobSkillCertificationResponse();
+            ResourceJobSkillCertificationResponse r = new ResourceJobSkillCertificationResponse();
+            r.ResourceJobSkill = list;
+
+            ResourceCertification ra = new ResourceCertification();
+
+            List<ResourceCertification> p = new List<ResourceCertification>();
+            p.Add((ResourceCertification)ra.AutoPopulate());
+
+            r.ResourceCertification = p;
+            return r;
         }
     }
 }

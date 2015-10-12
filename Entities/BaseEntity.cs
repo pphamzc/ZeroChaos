@@ -11,6 +11,16 @@ namespace ZeroChaos.Business.Entities
     /// </summary>
     public class BaseEntity
     {
+
+        public enum LanguageProfiency { Fluent, Intermediate, Beginner };
+        public enum JobPreferenceStatus { Available, FutureAvailable, NotAvailable };
+        public enum WorkPreference { Onsite, Remote, Both };
+        public enum ResourceJobPreferenceForCountry { LegallyAllowedToWork, PreferredToWork };
+
+        public BaseEntity()
+        {
+
+        }
         /// <summary>
         /// Gets or sets the created date.
         /// </summary>
@@ -46,5 +56,10 @@ namespace ZeroChaos.Business.Entities
         /// The updated by login.
         /// </value>
         public string UpdatedByLogin { get; set; }
+
+        public virtual BaseEntity AutoPopulate()
+        {
+            return new BaseEntity() { CreatedBy = 1, CreatedDate = new DateTime(2015, 1, 1), ModifiedByID = 1, ModifiedDate = new DateTime(2015, 2, 1) };
+        }
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ZeroChaos.Business.Entities
 {
-    public class Resource
+    public class Resource : BaseEntity
+
     {
         public string CareerGoal { get; set; }
         public string AspiringQuote { get; set; }
@@ -18,5 +19,6 @@ namespace ZeroChaos.Business.Entities
         public bool AllowProfileSearch { get; set; }
         public bool WillingToRelocate { get; set; }
 
+       
     }
 }

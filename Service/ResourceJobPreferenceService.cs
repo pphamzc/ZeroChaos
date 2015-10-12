@@ -31,6 +31,13 @@ namespace ZeroChaos.Service.Services
             rjpr.ResourceJobPreference = rjp;
             rjpr.jobCategory = new List<ObjectJobCategoryMapping>();
 
+            ObjectJobCategoryMapping cat = new ObjectJobCategoryMapping();
+            cat.JobCatID = 1;
+            cat.ObjectID = 2;
+            cat.ObjectJobCategoryMappingID = 3;
+            cat.ObjectPKID = 4;
+
+            rjpr.jobCategory.Add(cat);
 
             ResourceJobClassification reJobClass = new ResourceJobClassification();
             reJobClass.JobClassID = 1;
@@ -41,6 +48,13 @@ namespace ZeroChaos.Service.Services
             rjpr.jobClassification.Add(reJobClass);
 
             rjpr.resourceIndustry = new List<ObjectIndustryMapping>();
+            ObjectIndustryMapping indu = new ObjectIndustryMapping();
+            indu.IndustryGroupID = 1;
+            indu.ObjectID = 2;
+            indu.ObjectIndustryMappingID = 3;
+            indu.ObjectPKID = 5;
+
+            rjpr.resourceIndustry.Add(indu);
 
             ResourceJobPreferenceCountry ctry = new ResourceJobPreferenceCountry();
             ctry.CountryCode = "US";

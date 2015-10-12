@@ -16,6 +16,19 @@ namespace ZeroChaos.Business.Entities
         public DateTime EndDate { get; set; }
         public string Degree { get; set; }
         public string StudyField { get; set; }
-       
+
+
+        public override BaseEntity AutoPopulate()
+        {
+            base.AutoPopulate();
+            this.ResourceEducationID = 1;
+            this.Degree = "Masters Degrees";
+            this.InstituteName = "Purdue University";
+            this.StudyField = "Engineering";
+            this.StartDate = new DateTime(200, 1, 1);
+            this.EndDate = new DateTime(2004, 1, 1);
+
+            return this;
+        } 
     }
 }

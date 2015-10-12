@@ -17,5 +17,16 @@ namespace ZeroChaos.Business.Entities
         public int ReadProficiency { get; set; }
         public int WriteProficiency { get; set; }
         public bool IsPrimary { get; set; }
+
+
+        public override BaseEntity AutoPopulate()
+        {
+            ResourceLanguageProficiency me = new ResourceLanguageProficiency();
+            me.Language = "English";
+            me.IsPrimary = true;
+            me.SpeakProficiency = 5;
+            return me;
+        }
+      
     }
 }

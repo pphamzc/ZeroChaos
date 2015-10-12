@@ -45,3 +45,9 @@ bin
 obj
 bin
 obj
+FakeResourceDossier/bin/Debug/FakeResourceDossier.exe
+*.exe
+FakeResourceDossier/bin/Debug/FakeResourceDossier.exe
+*.pdb
+*.cache
+*.cache

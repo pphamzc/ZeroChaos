@@ -10,13 +10,13 @@ namespace ZeroChaos.Service.Services
 {
     public class ResourceEducationService : IResourceEducationService
     {
-        ResourceEducation re;
+        ResourceEducation re = new ResourceEducation();
         ResourceLanguageProficiency rl;
         List<ResourceEducation> lre;
         public ResourceEducationService()
         {
-            re = new ResourceEducation() { Degree = "Masters Degrees", InstituteName = "Purdue University", StudyField = "Engineering", StartDate = new DateTime(200, 1, 1), EndDate = new DateTime(2004, 1, 1) };
-            rl = new ResourceLanguageProficiency() { Language = "English", IsPrimary = true, SpeakProficiency = 5 }
+          
+            rl = new ResourceLanguageProficiency() { Language = "English", IsPrimary = true, SpeakProficiency = 5 };
             lre = new List<ResourceEducation>();
             lre.Add(re);
         }

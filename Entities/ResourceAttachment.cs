@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ZeroChaos.Business.Entities
 {
-    class ResourceAttachment
+    public class ResourceAttachment
     {
     }
 }
