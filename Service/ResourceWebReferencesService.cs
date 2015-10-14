@@ -13,7 +13,9 @@ namespace ZeroChaos.Service.Services
         /// This method return Web references details of the resource.
         public List<ResourceWebReferences> GetResourceWebReferencesByResourceID(int resourceID)
         {
-            return new List<ResourceWebReferences>();
+            List<ResourceWebReferences> r = new List<ResourceWebReferences>();
+            r.Add((ResourceWebReferences)new ResourceWebReferences().AutoPopulate());
+            return r;
         }
 
         /// This method add the Web references details of the resource.

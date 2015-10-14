@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZeroChaos.Service.Services;
+using ZeroChaos.Business.Entities;
 
 namespace FakeResourceDossier
 {
@@ -15,6 +17,13 @@ namespace FakeResourceDossier
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ResourceEducationService service = new ResourceEducationService();
+
+            ResourceEducationLanguageResponse moo = service.GetResourceEducationLanguageResponseByResourceID(10);
         }
     }
 }

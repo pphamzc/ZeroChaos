@@ -18,7 +18,7 @@ namespace ZeroChaos.Service.Services
           
             rl = new ResourceLanguageProficiency() { Language = "English", IsPrimary = true, SpeakProficiency = 5 };
             lre = new List<ResourceEducation>();
-            lre.Add(re);
+            lre.Add((ResourceEducation)re.AutoPopulate());
         }
         /// This method will return ResourceEducation details from ResourceEducation table based on ResourceID.
         public List<ResourceEducation> GetResourceEducationByResourceID(int resourceID)

@@ -51,3 +51,4 @@ FakeResourceDossier/bin/Debug/FakeResourceDossier.exe
 *.pdb
 *.cache
 *.cache
+/FakeResourceDossier/bin/Debug/*.exe

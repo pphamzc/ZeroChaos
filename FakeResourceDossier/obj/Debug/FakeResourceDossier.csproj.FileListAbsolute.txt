@@ -8,7 +8,14 @@ C:\Programming\FakeResourceDossier\FakeResourceDossier\obj\Debug\FakeResourceDos
 C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\FakeResourceDossier.exe.config
 C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\FakeResourceDossier.exe
 C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\FakeResourceDossier.pdb
+C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\ZeroChaos.Business.Entities.dll
+C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\Zerochaos.Service.dll
+C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\ZeroChaos.Service.Interface.dll
+C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\ZeroChaos.Business.Entities.pdb
+C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\ZeroChaos.Service.Interface.pdb
+C:\Programming\ZeroChaos\FakeResourceDossier\bin\Debug\Zerochaos.Service.pdb
 C:\Programming\ZeroChaos\FakeResourceDossier\obj\Debug\FakeResourceDossier.csprojResolveAssemblyReference.cache
+C:\Programming\ZeroChaos\FakeResourceDossier\obj\Debug\FakeResourceDossier.Form1.resources
 C:\Programming\ZeroChaos\FakeResourceDossier\obj\Debug\FakeResourceDossier.Properties.Resources.resources
 C:\Programming\ZeroChaos\FakeResourceDossier\obj\Debug\FakeResourceDossier.csproj.GenerateResource.Cache
 C:\Programming\ZeroChaos\FakeResourceDossier\obj\Debug\FakeResourceDossier.exe

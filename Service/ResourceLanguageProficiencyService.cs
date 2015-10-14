@@ -7,17 +7,28 @@ using ZeroChaos.Business.Entities;
 
 namespace ZeroChaos.Service.Interface
 {
-    interface IResourceLanguageProficiencyService
+    public class ResourceLanguageProficiencyService : IResourceLanguageProficiencyService
     {
 
         /// This method will return resource language proficiency details based on resourceid. 
-        List<ResourceLanguageProficiency> GetResourceLanguageProficiencyByResourceID(int resourceID);
+        public List<ResourceLanguageProficiency> GetResourceLanguageProficiencyByResourceID(int resourceID)
+        {
+            List<ResourceLanguageProficiency> l = new List<ResourceLanguageProficiency>();
+            l.Add((ResourceLanguageProficiency)new ResourceLanguageProficiency().AutoPopulate());
+            return l;
+        }
 
         /// This method will add resource language proficiency details.
-        int AddResourceLanguageProficiency(ResourceLanguageProficiency resourceLanguageProficiency);
+        public int AddResourceLanguageProficiency(ResourceLanguageProficiency resourceLanguageProficiency)
+        {
+            return 1;
+        }
 
         /// This method will update resource language proficiency level.
-        bool UpdateResourceLanguageProficiency(ResourceLanguageProficiency resourceLanguageProficiency);
+        public bool UpdateResourceLanguageProficiency(ResourceLanguageProficiency resourceLanguageProficiency)
+        {
+            return true;
+        }
 
     }
 }

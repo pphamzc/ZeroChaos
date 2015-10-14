@@ -68,7 +68,6 @@
     <Compile Include="ResourceResumeAttachmentRequest.cs" />
     <Compile Include="ResourceResumeAttachmentResponse.cs" />
     <Compile Include="ResourceResumeRequest.cs" />
-    <Compile Include="ResourceWebReference.cs" />
     <Compile Include="ResourceWebReferences.cs" />
     <Compile Include="ResourceWorkExperience.cs" />
     <Compile Include="ResourceWorkExperienceRequest.cs" />

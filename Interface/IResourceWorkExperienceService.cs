@@ -22,7 +22,7 @@ namespace ZeroChaos.Service.Interface
         bool UpdateResourceWorkExperience(ResourceWorkExperience resourceWorkExperience);
 
         /// This method will return all the work preference from look up table.
-        List<WorkPreference> GetAllWorkPreferences();
+        List<BaseEntity.WorkPreference> GetAllWorkPreferences();
 
 
     }

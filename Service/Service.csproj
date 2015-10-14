@@ -55,7 +55,6 @@
     <Compile Include="ResourceWebReferencesService.cs" />
     <Compile Include="ResourceWorkExperienceService.cs" />
     <Compile Include="ResourceWorkExperienceTransactionalService.cs" />
-    <Compile Include="ResourceDossierService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -57,8 +57,11 @@ namespace ZeroChaos.Service.Services
         {
             ResourceResumeAttachmentResponse rrar = new ResourceResumeAttachmentResponse();
             rrar.ResourceAttachment = new List<ResourceAttachment>();
+            rrar.ResourceAttachment.Add((ResourceAttachment)new ResourceAttachment().AutoPopulate());
             rrar.ResourceResume = new List<ResourceResume>();
             rrar.ResourceResume.Add((ResourceResume)new ResourceResume().AutoPopulate());
+            rrar.ResourceWebReferences = new List<ResourceWebReferences>();
+            rrar.ResourceWebReferences.Add((ResourceWebReferences)new ResourceWebReferences().AutoPopulate());
             return rrar;
         }
 

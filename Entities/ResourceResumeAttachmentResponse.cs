@@ -9,7 +9,7 @@ namespace ZeroChaos.Business.Entities
     {
         public List<ResourceResume> ResourceResume { get; set; }
         public List<ResourceAttachment> ResourceAttachment { get; set; }
-        public List<ResourceWebReference> ResourceWebReference { get; set; }
+        public List<ResourceWebReferences> ResourceWebReferences { get; set; }
 
     }
 }
