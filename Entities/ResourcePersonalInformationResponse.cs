@@ -7,5 +7,10 @@ namespace ZeroChaos.Business.Entities
 {
     public class ResourcePersonalInformationResponse
     {
+        public ResourcePersonalInformationResponse()
+        {
+            this.Resource = (Resource)new Resource().AutoPopulate();
+        }
+        Resource Resource { get; set; }
     }
 }

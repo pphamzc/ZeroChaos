@@ -12,5 +12,13 @@ namespace ZeroChaos.Business.Entities
         public int ObjectPKID { get; set; }
         public int IndustryGroupID { get; set; }
 
+        public override BaseEntity AutoPopulate()
+        {
+            this.ObjectID = 1;
+            this.ObjectIndustryMappingID = 2;
+
+            return this;
+        }
+
     }
 }

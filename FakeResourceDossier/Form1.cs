@@ -24,6 +24,17 @@ namespace FakeResourceDossier
             ResourceEducationService service = new ResourceEducationService();
 
             ResourceEducationLanguageResponse moo = service.GetResourceEducationLanguageResponseByResourceID(10);
+
+            ResourceService se = new ResourceService();
+
+            se.GetResourceDossierResponseByResourceID(1);
+            se.GetResourcePersonalInformationResponseByResourceID(1);
+            se.GetResourceProjectReviewResponseByResourceID(1);
+            se.GetResourceRequisitionSubmissionResponseByResourceID(1);
+            se.GetResourceResumeAttachmentResponseByResourceID(1);
+
+            ResourcePersonalInformationResponse rsp = new ResourcePersonalInformationResponse();
+
         }
     }
 }

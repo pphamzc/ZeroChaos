@@ -19,5 +19,18 @@ namespace ZeroChaos.Business.Entities
         public int JobPreferenceWorkPreferencesID { get; set; }
         public bool JobPreferenceWillingToRelocate { get; set; }
 
+
+        public override BaseEntity AutoPopulate()
+        {
+            this.JobPreferenceStatusID = 1;
+            this.ResourceID = 1;
+            this.JobPreferenceCurrencyCode = "USD";
+            this.JobPreferenceDateAvailable = new DateTime(2015, 1, 3);
+            this.JobPreferencePreferredPay = 100.00;
+            this.JobPreferenceMinimumPay = 100.00;
+            this.JobPreferenceDesiredPosition = "Manager";
+            this.JobPreferenceWillingToRelocate = true;
+            return this;
+        }
     }
 }
