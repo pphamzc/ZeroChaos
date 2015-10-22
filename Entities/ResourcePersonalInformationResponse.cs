@@ -11,6 +11,7 @@ namespace ZeroChaos.Business.Entities
         {
             this.Resource = (Resource)new Resource().AutoPopulate();
         }
-        Resource Resource { get; set; }
+
+        public Resource Resource { get; set; }
     }
 }

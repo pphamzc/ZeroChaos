@@ -14,8 +14,7 @@ namespace ZeroChaos.Service.TransactionalInterfaces
         /// This method will add / update the resource job preference details.
         public ResourceJobPreferenceResponse AddUpdateResourceJobPreferences(ResourceJobPreferenceRequest resourceJobPreferenceRequest)
         {
-            return new ResourceJobPreferenceResponse();
-
+            return new ResourceJobPreferenceResponse().AutoPopulate();
         }
     }
 }

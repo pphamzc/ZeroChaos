@@ -82,7 +82,7 @@ namespace ZeroChaos.Service.Services
         }
 
         /// This method will add the resource job preference details in ResourceJobPreference table.
-        public int AddResourceJobPreference(ResourceJobPreference resourceJobPreference)
+        public int AddUpdateResourceJobPreference(ResourceJobPreference resourceJobPreference)
         {
             return 1;
         }
@@ -100,5 +100,26 @@ namespace ZeroChaos.Service.Services
             return rjpr;
         }
 
+
+
+        //ResourceJobPreference IResourceJobPreferenceService.GetResourceJobPreferenceByResourceID(int resourceID)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public int AddResourceJobPreference(ResourceJobPreference resourceJobPreference)
+        {
+            throw new NotImplementedException();
+        }
+
+        //bool IResourceJobPreferenceService.UpdateResourceJobPreference(ResourceJobPreference resourceJobPreference)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //ResourceJobPreferenceResponse IResourceJobPreferenceService.GetResourceJobPreferenceResponseByResourceID(int resourceID)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

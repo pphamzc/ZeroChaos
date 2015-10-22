@@ -9,7 +9,7 @@ namespace ZeroChaos.Business.Entities
     /// <summary>
     /// 
     /// </summary>
-    public class BaseEntity
+    public class BaseEntity 
     {
 
         public enum LanguageProfiency { Fluent, Intermediate, Beginner };

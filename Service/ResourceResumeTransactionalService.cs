@@ -13,7 +13,7 @@ namespace ZeroChaos.Service.Services
         /// This method will add / update the resource Resume Attachment details.
         public ResourceResumeAttachmentResponse AddUpdateResourceResumes(ResourceResumeAttachmentRequest resourceResumeAttachmentRequest)
         {
-            return new ResourceResumeAttachmentResponse();
+            return new ResourceResumeAttachmentResponse().AutoPopulate();
         }
     }
 }

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPoco.cs" />
     <Compile Include="IResourceEducationTransactionalService.cs" />
     <Compile Include="IResourceJobPreferenceTransactionalService.cs" />
     <Compile Include="IResourceJobSkillTransactionalService.cs" />

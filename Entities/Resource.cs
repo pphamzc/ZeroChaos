@@ -18,6 +18,8 @@ namespace ZeroChaos.Business.Entities
         public string CitizenCountryCode { get; set; }
         public bool AllowProfileSearch { get; set; }
         public bool WillingToRelocate { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
         public override BaseEntity AutoPopulate()
         {
@@ -26,7 +28,8 @@ namespace ZeroChaos.Business.Entities
             this.AspiringQuote = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.";
             this.website = "www.mysite.com";
             this.WillingToRelocate = true;
-
+            this.FirstName = "John";
+            this.LastName = "Doe";
             return this;
         }
     }

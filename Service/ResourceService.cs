@@ -82,7 +82,7 @@ namespace ZeroChaos.Service.Services
         /// This method will add / update the resource personal information.
         public int AddUpdateResourcePersonalInformationByResourceID(ResourceRequest resourceRequest)
         {
-            return 0;
+            return 1;
         }
 
     }
